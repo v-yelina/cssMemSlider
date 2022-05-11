@@ -3,45 +3,56 @@
 }
 
 body {
-    background-color: rgba(139, 0, 0, 0.334);
+    background-color: #E8E7D4;
 }
 
 .main {
-    max-width: 90%;
-    margin: 2% auto 20%;
+    max-width: 80%;
+    margin: 2% auto;
+    height: 92vh;
+    overflow: hidden;
 }
 
 .slider {
+    padding: 1.5rem;
+    background-color: #F1EFD8;
     min-width: 100%;
-    margin-bottom: 3%;
+    border-radius: 20px;
+    transition: 0.8s;
+    scroll-behavior: smooth;
 }
 
 .slide {
     display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+    height: 90vh;
+    transition: 0.8s;
+    scroll-behavior: smooth;
+
 }
-
-
 
 .slide img {
     display: block;
     width: 100%;
+    margin-bottom: 3%;
+    height: 80vh;
 }
 
 .controls {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    text-align: right;
+    width: 20%;
+    gap: 1rem;
+    padding: 0;
 }
 
 .controls li {
-    width: 1rem;
-    padding: 1vw;
     list-style: none;
+    max-width: max-content;
 }
 
 .controls a {
-    border-radius: 50%;
-    width: 1rem;
+    padding: 0.3rem;
 }
