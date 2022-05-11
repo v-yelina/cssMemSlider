@@ -1,0 +1,25 @@
+body {
+    background-color: rgba(139, 0, 0, 0.334);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin: 2% auto 20%;
+}
+
+.slider {
+    min-width: 100%;
+    margin-bottom: 3%;
+}
+
+.slider img {
+    display: block;
+    width: 100%;
+}
+
+.controls {
+    display: flex;
+}
