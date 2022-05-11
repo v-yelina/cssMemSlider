@@ -1,11 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: rgba(139, 0, 0, 0.334);
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     max-width: 90%;
     margin: 2% auto 20%;
 }
@@ -15,11 +16,32 @@ body {
     margin-bottom: 3%;
 }
 
-.slider img {
+.slide {
+    display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+
+
+
+.slide img {
     display: block;
     width: 100%;
 }
 
 .controls {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: right;
+}
+
+.controls li {
+    width: 1rem;
+    padding: 1vw;
+    list-style: none;
+}
+
+.controls a {
+    border-radius: 50%;
+    width: 1rem;
 }
