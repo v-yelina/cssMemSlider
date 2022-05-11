@@ -11,6 +11,7 @@ body {
     margin: 2% auto;
     height: 92vh;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .slider {
@@ -19,7 +20,6 @@ body {
     min-width: 100%;
     border-radius: 20px;
     transition: 0.8s;
-    scroll-behavior: smooth;
 }
 
 .slide {
@@ -29,7 +29,6 @@ body {
     margin-bottom: 4%;
     height: 90vh;
     transition: 0.8s;
-    scroll-behavior: smooth;
 
 }
 
@@ -54,5 +53,29 @@ body {
 }
 
 .controls a {
-    padding: 0.3rem;
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+#slide1:target .slide1-link {
+    fill: #ADBA9C;
+}
+
+#slide2:target .slide2-link {
+    fill: #ADBA9C;
+}
+
+#slide3:target .slide3-link {
+    fill: #ADBA9C;
+}
+
+#slide4:target .slide4-link {
+    fill: #ADBA9C;
+}
+
+.controls a.slide1-link:hover,
+.controls a.slide2-link:hover,
+.controls a.slide3-link:hover,
+.controls a.slide4-link:hover {
+    fill: azure;
 }
