@@ -15,11 +15,11 @@ body {
 }
 
 .slider {
-    padding: 1.5rem;
-    background-color: #F1EFD8;
-    min-width: 100%;
-    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* min-width: 100%; */
     transition: 0.8s;
+    padding-left: 3%;
 }
 
 .slide {
@@ -29,6 +29,7 @@ body {
     margin-bottom: 4%;
     height: 90vh;
     transition: 0.8s;
+    min-width: 103%;
 
 }
 
