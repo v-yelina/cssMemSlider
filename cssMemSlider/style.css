@@ -9,7 +9,7 @@ body {
 .main {
     max-width: 80%;
     margin: 1% auto;
-    height: 95vh;
+    height: 97vh;
     overflow: hidden;
     scroll-behavior: smooth;
 }
@@ -17,9 +17,9 @@ body {
 .slider {
     display: flex;
     flex-wrap: nowrap;
-    /* min-width: 100%; */
+    gap: 3%;
     transition: 0.8s;
-    padding-left: 3%;
+    padding-left: 5%;
 }
 
 .slide {
@@ -83,4 +83,29 @@ body {
 .controls a.slide3-link:hover,
 .controls a.slide4-link:hover {
     fill: azure;
+}
+
+@media screen and (max-width: 820px) {
+    .slider {
+        gap: 5%;
+    }
+    .slide {
+        justify-content: center;
+        gap: 0.5%;
+    }
+
+    .slide img {
+        max-height: 70vh;
+        margin-bottom: 0;
+    }
+    .slide p {
+        order: 3;
+        min-width: 100%;
+        margin-left: 1%;
+    }
+
+    .controls {
+        margin-bottom: 0;
+        order: 2;
+    }
 }
