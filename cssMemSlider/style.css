@@ -8,7 +8,7 @@ body {
 
 .main {
     max-width: 80%;
-    margin: 1% auto;
+    margin: 0 auto;
     height: 97vh;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -16,20 +16,19 @@ body {
 
 .slider {
     display: flex;
+    padding-top: 1%;
     flex-wrap: nowrap;
     gap: 3%;
     transition: 0.8s;
-    padding-left: 5%;
 }
 
 .slide {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 4%;
     height: 90vh;
-    transition: 0.8s;
-    min-width: 103%;
+    min-width: 79vw;
+    gap: 3%;
 
 }
 
@@ -40,14 +39,13 @@ body {
 .slide img {
     display: block;
     width: 100%;
-    margin-bottom: 3%;
     height: 80vh;
 }
 
 .controls {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 20%;
+    grid-template-columns: repeat(5,1fr);
+    min-width: 25%; 
     gap: 1rem;
     padding: 0;
 }
@@ -78,10 +76,15 @@ body {
     fill: #ADBA9C;
 }
 
+#slide5:target .slide5-link {
+    fill: #ADBA9C;
+}
+
 .controls a.slide1-link:hover,
 .controls a.slide2-link:hover,
 .controls a.slide3-link:hover,
-.controls a.slide4-link:hover {
+.controls a.slide4-link:hover,
+.controls a.slide5-link:hover {
     fill: azure;
 }
 
@@ -91,11 +94,12 @@ body {
     }
     .slide {
         justify-content: center;
-        gap: 0.5%;
+        gap: 1%;
+    height: max-content;
     }
 
     .slide img {
-        max-height: 70vh;
+        max-height: 65vh;
         margin-bottom: 0;
     }
     .slide p {
@@ -108,4 +112,14 @@ body {
         margin-bottom: 0;
         order: 2;
     }
+}
+
+@media screen and (max-width: 600px) {
+.slide {
+    gap: 0.2%;
+}
+
+.slide img {
+   max-height: 40vh;
+}
 }
