@@ -8,7 +8,7 @@ body {
 
 .main {
     max-width: 80%;
-    margin: 1% auto;
+    margin: 0 auto;
     height: 97vh;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -16,20 +16,20 @@ body {
 
 .slider {
     display: flex;
+    padding-top: 1%;
     flex-wrap: nowrap;
     gap: 3%;
     transition: 0.8s;
-    padding-left: 5%;
 }
 
 .slide {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 4%;
+    /* margin-bottom: 4%; */
     height: 90vh;
     transition: 0.8s;
-    min-width: 103%;
+    min-width: 100%;
 
 }
 
@@ -46,8 +46,8 @@ body {
 
 .controls {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    width: 20%;
+    grid-template-columns: repeat(5,1fr);
+    width: 25%;
     gap: 1rem;
     padding: 0;
 }
@@ -78,10 +78,15 @@ body {
     fill: #ADBA9C;
 }
 
+#slide5:target .slide5-link {
+    fill: #ADBA9C;
+}
+
 .controls a.slide1-link:hover,
 .controls a.slide2-link:hover,
 .controls a.slide3-link:hover,
-.controls a.slide4-link:hover {
+.controls a.slide4-link:hover,
+.controls a.slide5-link:hover {
     fill: azure;
 }
 
