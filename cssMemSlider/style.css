@@ -80,11 +80,16 @@ body {
     fill: #ADBA9C;
 }
 
-.controls a.slide1-link:hover,
-.controls a.slide2-link:hover,
-.controls a.slide3-link:hover,
-.controls a.slide4-link:hover,
-.controls a.slide5-link:hover {
+#slide1:target a.slide1-link:hover,
+#slide2:target a.slide2-link:hover,
+#slide3:target a.slide3-link:hover,
+#slide4:target a.slide4-link:hover,
+#slide5:target a.slide5-link:hover,
+a.slide1-link:hover,
+a.slide2-link:hover,
+a.slide3-link:hover,
+a.slide4-link:hover,
+a.slide5-link:hover {
     fill: azure;
 }
 
