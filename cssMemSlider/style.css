@@ -65,6 +65,10 @@ body {
     fill: #ADBA9C;
 }
 
+#slide1 .slide1-link {
+    fill: #ADBA9C;
+}
+
 #slide2:target .slide2-link {
     fill: #ADBA9C;
 }
@@ -92,6 +96,14 @@ a.slide3-link:hover,
 a.slide4-link:hover,
 a.slide5-link:hover {
     fill: azure;
+}
+
+a.slide1-link:active,
+a.slide2-link:active,
+a.slide3-link:active,
+a.slide4-link:active,
+a.slide5-link:active {
+    fill: rgb(230, 185, 108);
 }
 
 @media screen and (max-width: 820px) {
